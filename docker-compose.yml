@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  voip:
+    image: bersena/asterisk:1.0.0
+    ports:
+      - "5060:5060/udp"
+      - "5060:5060"
+      - "5038:5038/udp"
+      - "5038:5038"
+      - "10000-10099:10000-10099/udp"
+    environment:
+      - DEBUG=True
+    volumes:
+      - ./asterisk:/etc/asterisk
