@@ -1,2 +1,3 @@
 asterisk/
 .idea/
+*.pyc
