@@ -5,7 +5,7 @@ from schemas import PJSipUserData
 
 app = FastAPI()
 
-pjsip_client = PJSipClient(host="http://localhost:8088", user="asterisk", password="asterisk")
+pjsip_client = PJSipClient(host="http://voip:8088", user="asterisk", password="asterisk")
 
 
 @app.post("/users")
